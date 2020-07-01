@@ -10,7 +10,7 @@ query=input("enter your query:")
 query1=""
 list_needed=""
 
-if 'who is' in query:
+if 'who is' in query:       #you can use any wh word as prefix to the question
     chrome_path = r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s' 
     print('loading')
     query2=""
@@ -18,7 +18,7 @@ if 'who is' in query:
     str2=""
     if 'who is' in query :
         list_name=list(query)
-        list_needed=list_name[7:]
+        list_needed=list_name[7:]     # make sure you slice 1+ index than your prefix to the question
                 
         for word in list_needed:  
              str2 += word   
@@ -37,15 +37,3 @@ if 'who is' in query:
 
       
     
-    # initialize an empty string 
-    str1 = ""  
-    
-    
-   
-   
-    
-            #chrome_path = r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s'
-            #speak(f'let me see what you want to search')
-
-           # for url in search(query, tld="co.in", num=1, stop = 1, pause = 2):
-            #    webbrowser.open("https://google.com/search?q=%s" % query)

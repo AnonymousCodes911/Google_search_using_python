@@ -1,7 +1,7 @@
 
 import googlesearch                 #pip install googlesearch
 
-import webbrowser
+import webbrowser                 # pip install webbrowser
 
 
 from googlesearch import search
